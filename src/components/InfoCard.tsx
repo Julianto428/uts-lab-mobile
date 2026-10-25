@@ -46,10 +46,10 @@ export default function InfoCard({ title, status, onPress, subtitle }: InfoCardP
 const styles = StyleSheet.create({
   cardContainer: {
     backgroundColor: '#FFFFFF',
-    borderRadius: 24, // Sudut membulat seperti referensi
+    borderRadius: 24, 
     padding: 20,
     marginBottom: 16,
-    shadowColor: '#8FA1B4', // Shadow lembut
+    shadowColor: '#8FA1B4', 
     shadowOffset: { width: 0, height: 8 },
     shadowOpacity: 0.15,
     shadowRadius: 15,

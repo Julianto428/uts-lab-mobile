@@ -14,7 +14,6 @@ import {
 
 import InfoCard from '../components/InfoCard';
 
-// Dataset statis di luar komponen (Syarat UTS)
 const DAFTAR_MAHASISWA = [
   { id: '1', nama: 'Alifia Putri', prodi: 'Sistem Informasi' },
   { id: '2', nama: 'Budi Santoso', prodi: 'Teknologi Informasi' },
@@ -26,24 +25,20 @@ const DAFTAR_MAHASISWA = [
 export default function IndexScreen() {
   const [keyword, setKeyword] = useState<string>('');
   
-  // State untuk Custom Alert/Notifikasi
   const [alertConfig, setAlertConfig] = useState({
     visible: false,
     title: '',
     message: ''
   });
 
-  // Fungsi untuk memunculkan Custom Alert
   const showAlert = (title: string, message: string) => {
     setAlertConfig({ visible: true, title, message });
   };
 
-  // Fungsi untuk menutup Custom Alert
   const closeAlert = () => {
     setAlertConfig((prev) => ({ ...prev, visible: false }));
   };
 
-  // Filter Real-Time (Syarat UTS)
   const filteredMahasiswa = DAFTAR_MAHASISWA.filter((item) =>
     item.nama.toLowerCase().includes(keyword.toLowerCase()) ||
     item.prodi.toLowerCase().includes(keyword.toLowerCase())
@@ -228,7 +223,7 @@ const styles = StyleSheet.create({
     width: 36,
     height: 36,
     borderRadius: 18,
-    backgroundColor: '#D97706', // Warna oranye gelap sesuai gambar notifikasi
+    backgroundColor: '#D97706', 
     justifyContent: 'center',
     alignItems: 'center',
   },
@@ -389,10 +384,10 @@ const styles = StyleSheet.create({
     fontWeight: '700',
   },
 
-  // STYLES UNTUK CUSTOM MODAL ALERT
+
   modalOverlay: {
     flex: 1,
-    backgroundColor: 'rgba(23, 37, 52, 0.5)', // Warna gelap semi-transparan
+    backgroundColor: 'rgba(23, 37, 52, 0.5)', 
     justifyContent: 'center',
     alignItems: 'center',
   },

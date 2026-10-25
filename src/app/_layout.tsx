@@ -6,17 +6,17 @@ export default function TabLayout() {
     <Tabs
       screenOptions={{
         headerShown: false,
-        tabBarActiveTintColor: '#74A4FC', // Warna biru lembut saat tab aktif
-        tabBarInactiveTintColor: '#8FA1B4', // Warna abu-abu saat non-aktif
+        tabBarActiveTintColor: '#74A4FC', 
+        tabBarInactiveTintColor: '#8FA1B4', 
         tabBarStyle: {
-          backgroundColor: '#FFFFFF', // Latar belakang putih bersih
-          borderTopWidth: 0, // Menghilangkan garis batas kaku di atas
-          elevation: 15, // Efek bayangan (Android)
-          shadowColor: '#8FA1B4', // Warna bayangan (iOS)
+          backgroundColor: '#FFFFFF', 
+          borderTopWidth: 0, 
+          elevation: 15, 
+          shadowColor: '#8FA1B4', 
           shadowOffset: { width: 0, height: -4 },
           shadowOpacity: 0.15,
           shadowRadius: 15,
-          height: 65, // Membuat bar sedikit lebih tinggi agar lega
+          height: 65, 
           paddingBottom: 10,
           paddingTop: 10,
         },
